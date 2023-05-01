@@ -4,5 +4,117 @@ li a {
 }
 
 body {
-    background-color: #282828; /* set the background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 100vh;
+    background: hsl(204, 100%, 5%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 50px;
+    padding-top: 100px;
+
+    height:  60px;
+    font-size: 72px;
+    color: #71632d;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header, ul, legend, h1 {
+    background: linear-gradient(
+        to right,
+        hsl(98 100% 62%),
+        hsl(204, 100%, 59%)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 500px;
+    border: 1px solid whitesmoke;
+    padding: 50px;
+    margin-bottom: 20px;
+
+    font-size: 20px;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    padding: 50px 0;
+}
+
+label {
+    width: 25%;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    font-size: 20px;
+
+    padding-left: 8px;
+    transition: background-color 0.3s ease;
+}
+
+input, label:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
+legend {
+    font-size: 32px;
+}
+
+input, label {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: hsl(204, 67%, 41%);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: hsl(125, 76%, 29%);
+    cursor: pointer;
+}
+
+p {
+    color: #d34747;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
 }

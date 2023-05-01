@@ -1,0 +1,12 @@
+li {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+    border: none;
+}
+
+h1 {
+    font-size: 32px;
+}
+
